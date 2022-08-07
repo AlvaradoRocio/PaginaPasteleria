@@ -1,0 +1,23 @@
+.holder img{
+    width: 100%;
+    border-radius:10% ;
+    object-fit: cover;
+    height: 200px;
+    float: right;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+
+button{
+    margin: 10px;
+}
+
+.form-control{
+    margin: 10px;
+    width: 80%;
+}
+

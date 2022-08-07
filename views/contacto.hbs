@@ -1,0 +1,40 @@
+<main>
+        <div class="contacto">
+            <img src="images/contacto/fondodecontac.jpg" alt="">
+            <h1>Contactanos</h1>
+            <div class="columna">
+                <form action="/contacto" method="POST" class="formulario">
+                    <p>
+                        <label for="">Nombre</label>
+                        <input type="text" name="nombre">
+                    </p>
+                    <p>
+                        <label for="">Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label for="">Telefono</label>
+                        <input type="text" name="telefono">
+                    </p>
+                    <p>
+                        <label for="">Comentario</label>
+                        <textarea id="comentario" name="mensaje"></textarea>
+                    </p>
+                     {{message}}
+                    <p class="acciones"><input type="submit" class="btn" value="Enviar"></p>
+                </form>
+               
+            </div>
+        </div>
+        <div class="redes">
+            <h2>Nuestras redes: </h2>
+            <ul>
+                <li class="icono"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li class="icono"><a href="#"><i class="far fa-envelope"></i></a></li>
+                <li class="icono"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="icono"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li class="icono"><a href="#"><i class="fab fa-skype"></i></a></li>
+            </ul>
+
+        </div>
+    </main>

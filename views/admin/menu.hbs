@@ -1,0 +1,55 @@
+<div style="width:80%; margin-left:150px;">
+    <div class="container" style="padding: 150px 0 50px 0;">
+        <div class="row">
+            <p class="text-end">Hola {{usuario}}<a class="btn btn-danger" style="color: white;margin-left: 200px;"
+                    href="/admin/login/logout" >Cerrar sesion
+                    <i class="fas fa-sign-out-alt"></i>
+                </a></p>
+
+        </div>
+        <div class="row" style="margin-top:50px;">
+            <div class="col-9">
+                <h3 class="text-end">Listado de productos</h3>
+            </div>
+            <div class="col-3 text-end">
+                <a href="/admin/menu/agregar" class="btn btn-success" style="color: white;">
+                    <i class="fa fa-plus" style="margin: 0;"></i>
+                    Nuevo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="border: 1px solid black; padding:20px; margin:20px">
+        <div class="col">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" >#</th>
+                        <th scope="col" >titulo</th>
+                        <th scope="col" >parrafo</th>
+                        <th scope="col" class="text-end">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each menu}}
+
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td>{{cuerpo}}</td>
+                        <td class="text-end acciones">
+                            <a href="/admin/menu/modificar/{{id}}" class="btn btn-sm btn-secondary"><i class="far fa-edit"></i>
+                            </a>
+                            <a href="/admin/menu/eliminar/{{id}}" class="btn btn-sm btn-secondary">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

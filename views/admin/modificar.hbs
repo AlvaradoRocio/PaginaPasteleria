@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Modificar el menu</h4>
+            <form action="/admin/menu/modificar" method="post">
+                <input type="hidden" value="{{menu.id}}" name="id">
+                <div class="form-group">
+                    <input type="text" placeholder="Titulo" value="{{menu.titulo}}" class="form-control" name="titulo">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Parrafo" value="{{menu.cuerpo}}" class="form-control" name="cuerpo">
+                </div>
+                <button type="submit">Modificar</button>
+            </form>
+        </div>
+    </div>
+</div>
